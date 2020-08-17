@@ -8,6 +8,7 @@ public class SimpleBot {
         remindName();
         guessAge();
         count();
+        end();
     }
 
     static void greet(String assistantName, String birthYear) {
@@ -37,5 +38,36 @@ public class SimpleBot {
         for (int i = 0; i <= num; i++) {
             System.out.printf("%d!\n", i);
         }
+    }
+
+    static void test() {
+        System.out.println("Let's test your programming knowledge.");
+        System.out.println("Why do we use methods?");
+
+        String one = "1. To repeat a statement multiple times.";
+        String two = "2. To decompose a program into several small subroutines.";
+        String three = "3. To determine the execution time of a program.";
+        String four = "4. To interrupt the execution of a program.";
+
+        while(true) {
+            System.out.println(one);
+            System.out.println(two);
+            System.out.println(three);
+            System.out.println(four);
+
+            int answer = scanner.nextInt();
+
+            if(answer == 2){
+                System.out.println("Yes, that's correct! Well done!");
+                break;
+            } else {
+                System.out.println("Please, try again");
+            }
+        }
+    }
+
+    static void end() {
+        test();
+        System.out.println("It was nice to meet you. Have a great day!");
     }
 }
